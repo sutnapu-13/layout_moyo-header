@@ -23,7 +23,7 @@ body {
   margin: 0;
 }
 
-.nav a {
+.nav_link {
   display: flex;
   align-items: center;
   height: 60px;
@@ -31,20 +31,20 @@ body {
   color: #000;
 }
 
-.nav li {
+.nav__item {
   margin-right: 20px;
 }
 
-.nav li:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 
-.nav a.is-active {
+.nav_link.is-active {
   color: var(--blue);
   position: relative;
 }
 
-.nav a.is-active::after {
+.nav_link.is-active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -54,6 +54,6 @@ body {
   background-color: var(--blue);
 }
 
-.nav a:hover {
+.nav_link:hover {
   color: var(--blue);
 }
